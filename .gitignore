@@ -3,6 +3,9 @@
 ##
 ## Get latest from `dotnet new gitignore`
 
+#aws
+.aws-sam
+
 # dotenv files
 .env
 

@@ -5,7 +5,8 @@
     // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
     "image": "mcr.microsoft.com/devcontainers/dotnet:6.0",
     "features": {
-        "ghcr.io/devcontainers/features/aws-cli:1": {}
+        "ghcr.io/devcontainers/features/aws-cli:1": {},
+        "ghcr.io/goldsam/dev-container-features/aws-sam-cli:1": {}
     },
 
     // Features to add to the dev container. More info: https://containers.dev/features.
@@ -20,7 +21,7 @@
     // }
 
     // Use 'postCreateCommand' to run commands after the container is created.
-    "postCreateCommand": "dotnet tool install -g Amazon.Lambda.Tools && dotnet new --install Amazon.Lambda.Templates",
+    "postCreateCommand": "dotnet tool install -g Amazon.Lambda.Tools && dotnet new --install Amazon.Lambda.Templates && git config --global core.autocrlf true",
     "customizations": {
         "vscode": {
             "extensions": [

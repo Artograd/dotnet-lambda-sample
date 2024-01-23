@@ -1,0 +1,9 @@
+version = 0.1
+[dev.deploy.parameters]
+stack_name = "sam-dotnet-sample"
+resolve_s3 = true
+s3_prefix = "sam-dotnet-sample"
+region = "eu-central-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+image_repositories = []
